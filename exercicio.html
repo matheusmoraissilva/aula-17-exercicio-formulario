@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Formulário</title>
+</head>
+<body>
+    
+    <form action="#" method="post" autocomplete="on">
+
+        <fieldset>
+
+            <legend>Dados Pessoais</legend><br>
+
+            <label for="inome">Nome Completo:</label><br>
+            <input type="text" id="inome" placeholder="Digite seu nome Completo" maxlength="20" required><br><br>
+
+            <label for="iemail">Email:</label><br>
+            <input type="email" id="iemail" placeholder="seuemail@exemplo.com" required autocomplete="email"><br><br>
+
+            <label for="itelefone">Telefone (formato (XX)XXXXX-XXXX)</label><br>
+            <input type="tel" id="itelefone" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(11)91234-5678"><br><br>
+
+            <label for="iidade">Idade:</label><br>
+            <input type="number" id="iidade" placeholder="sua idade"><br><br>
+
+            <label for="iest">Estado de entrega:</label><br>
+            <select name="estado" id="iest">
+                <option value="" selected>--Selecione seu estado--</option>
+             <optgroup label="Região Norte">
+                <option value="AM">Amazonas</option>
+                <option value="RR">Roraima</option>
+                <option value="AP">Amapá</option>
+                <option value="PA">Pará</option>
+                <option value="TO">Tocantins</option>
+                <option value="RO">Rondônia</option>
+                <option value="AC">Acre</option>
+             </optgroup>   
+              
+             <optgroup label="Região Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="PI">Piauí</option>
+                <option value="CE">Ceará</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PB">Paraíba</option>
+                <option value="SE">Sergipe</option>
+                <option value="AL">Alagoas</option>
+                <option value="BA">Bahia</option>
+             </optgroup>
+
+             <optgroup label="Região Centro-Oeste">
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="GO">Goiâs</option>
+                <option value="DF">Distrito Federal</option>
+             </optgroup>
+
+             <optgroup label="Região Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="MG">Minas Gerais</option>
+             </optgroup>
+
+             <optgroup label="Região Sul">
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+             </optgroup>
+
+            </select><br><br>
+
+            <label for="ifoto">Envie uma foto da sua CNH:</label><br>
+             <input type="file" name="foto" id="ifoto">
+            
+        </fieldset><br><br>
+
+        <fieldset>
+
+            <legend>Escolha do Carro</legend><br>
+
+            <label for="">Escolhendo o Modelo:</label><br>
+            
+            <input type="radio" name="modelo" id="imodelo"> <label for="imodelo">BYD Seal</label><br>
+            <input type="radio" name="modelo" id="imodelo"> <label for="imodelo">BYD Han</label><br>
+            <input type="radio" name="modelo" id="imodelo"> <label for="imodelo">BYD Song Plus</label><br><br>
+
+            <label for="">Itens Adicionais:</label><br>
+
+            <input type="checkbox" name="modelo" id="iadd"> <label for="iadd">Som Premium</label><br>
+            <input type="checkbox" name="modelo" id="iadd"> <label for="iadd">Ar-condicionado Digital</label><br>
+            <input type="checkbox" name="modelo" id="iadd"> <label for="iadd">Câmera 360º</label><br><br>
+
+            <label for="icor">Cor do Carro:</label><br>
+            <input type="color" name="cor" id="icor" value="#00ff00"><br><br>
+
+            <label for="ibrilho">Intensidade da cor (brilho):</label><br>
+            <input type="range" name="brilho" id="ibrilho" min="1" max="5" value="2">
+
+        </fieldset><br><br>
+
+        <fieldset>
+
+            <legend>Entrega</legend><br>
+
+            <label for="idata">Data de entrega:</label><br>
+            <input type="date" name="data" id="idata" ><br><br>
+
+            <label for="ihora">Hora preferida para entrega:</label><br>
+            <input type="time" name="hora" id="ihora"><br><br>
+
+            <label for="imes">Mês da compra:</label><br>
+            <input type="month" name="mes" id="imes">
+
+        </fieldset><br><br>
+
+        <fieldset>
+
+            <legend>Sua Opinião</legend><br>
+
+            <label for="iop">Conte qual é a sua expectativa sobre o carro:</label><br>
+            <textarea name="opniao" id="iop" cols="35" rows="7" maxlength="150" placeholder="Exemplo, espero que o carro tenha boa autonomia, seja confortável, silencioso e impressione os vizinhos!"></textarea>
+
+        </fieldset><br><br>
+
+        <fieldset>
+
+            <legend>Avaliação dos modelos BYD</legend><br>
+
+            <label for="imedia">Avalie o BYD Dolphin Plus:</label><br>
+            <input type="number" name="media" id="imedia" min="0" max="5" placeholder="0 a 5" step="0.1"><br><br>
+
+            <label for="imedia">Avalie o BYD GS:</label><br>
+            <input type="number" name="media" id="imedia" min="0" max="5" placeholder="0 a 5" step="0.1"><br><br>
+
+            <label for="imedia">Avalie o BYD Mini:</label><br>
+            <input type="number" name="media" id="imedia" min="0" max="5" placeholder="0 a 5" step="0.1">
+
+        </fieldset><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+
+</body>
+</html>
